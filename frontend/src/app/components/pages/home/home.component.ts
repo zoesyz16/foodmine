@@ -6,11 +6,12 @@ import { CurrencyPipe, NgFor } from '@angular/common';
 import { StarRatingComponent } from '../../partials/star-rating/star-rating.component';
 import { SearchComponent } from "../../partials/search/search.component";
 import { TagsComponent } from "../../partials/tags/tags.component";
+import { NotFoundComponent } from "../../partials/not-found/not-found.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NgFor, RouterLink, StarRatingComponent, CurrencyPipe, SearchComponent, TagsComponent],
+  imports: [NgFor, RouterLink, StarRatingComponent, CurrencyPipe, SearchComponent, TagsComponent, NotFoundComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

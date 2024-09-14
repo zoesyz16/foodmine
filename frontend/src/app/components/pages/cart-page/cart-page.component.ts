@@ -3,13 +3,14 @@ import { Cart } from '../../../shared/models/Cart';
 import { CartService } from '../../../services/cart.service';
 import { CartItem } from '../../../shared/models/CartItem';
 import { TitleComponent } from '../../partials/title/title.component';
-import { CurrencyPipe, NgFor } from '@angular/common';
+import { CurrencyPipe, NgFor, NgIf } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { NotFoundComponent } from "../../partials/not-found/not-found.component";
 
 @Component({
   selector: 'app-cart-page',
   standalone: true,
-  imports: [TitleComponent, NgFor,  RouterLink, CurrencyPipe],
+  imports: [TitleComponent, NgFor, RouterLink, CurrencyPipe, NotFoundComponent, NgIf],
   templateUrl: './cart-page.component.html',
   styleUrl: './cart-page.component.css'
 })

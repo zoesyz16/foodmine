@@ -3,13 +3,14 @@ import { Food } from '../../../shared/models/Food';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { FoodService } from '../../../services/food.service';
 import { StarRatingComponent } from "../../partials/star-rating/star-rating.component";
-import { CurrencyPipe, NgFor } from '@angular/common';
+import { CurrencyPipe, NgFor, NgIf } from '@angular/common';
 import { CartService } from '../../../services/cart.service';
+import { NotFoundComponent } from "../../partials/not-found/not-found.component";
 
 @Component({
   selector: 'app-food-page',
   standalone: true,
-  imports: [StarRatingComponent, RouterLink, NgFor, CurrencyPipe],
+  imports: [StarRatingComponent, RouterLink, NgFor, CurrencyPipe, NotFoundComponent, NgIf],
   templateUrl: './food-page.component.html',
   styleUrl: './food-page.component.css'
 })
