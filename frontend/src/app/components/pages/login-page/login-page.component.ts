@@ -5,11 +5,15 @@ import { TitleComponent } from "../../partials/title/title.component";
 import { NgIf } from '@angular/common';
 import { UserService } from '../../../services/user.service';
 import { ActivatedRoute, Route, Router } from '@angular/router';
+import { InputContainerComponent } from "../../partials/input-container/input-container.component";
+import { InputValidationComponent } from "../../partials/input-validation/input-validation.component";
+import { TextInputComponent } from "../../partials/text-input/text-input.component";
+import { DefaultButtonComponent } from "../../partials/default-button/default-button.component";
 
 @Component({
   selector: 'app-login-page',
   standalone: true,
-  imports: [CartPageComponent, TitleComponent, ReactiveFormsModule, NgIf],
+  imports: [CartPageComponent, TitleComponent, ReactiveFormsModule, NgIf, InputContainerComponent, InputValidationComponent, TextInputComponent, DefaultButtonComponent],
   templateUrl: './login-page.component.html',
   styleUrl: './login-page.component.css'
 })
